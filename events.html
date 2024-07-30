@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management Company</title>
+</head>
+<body>
+    <h1>Hello Envent Handler, (Mouse click Handler)</h1>
+        <!-- <button onmouseover="handlerClick()">Click Me</button> -->
+        <button>Click Me-1</button>
+        <button>Click Me-2</button>
+        <button>Click Me-3</button>
+    <script>
+        function handlerClick(){
+            console.log('Someone is over me')
+        }
+    </script>
+
+    <div>
+        <h1>Hello Envent Handler, (Mouse click Handler)</h1>
+        <button>Click Me</button>
+        <button id="second">Click Me-1</button>
+        <button id="third">Click Me-2</button>
+        <button id="lastperson">Click Me-3</button>
+    <script>
+        // function handlerClick(){
+        //     document.body.style.backgroundColor = 'pink';
+        // }
+        // const secondButton = document.getElementById('second');
+        // secondButton.onmouseover = handlerClick;
+      
+
+        document.getElementById('lastperson').addEventListener('click', function(){
+            document.body.style.color = 'green';
+        })
+        document.getElementById('third').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'tomato';
+        })
+    </script>
+    </div>
+</body>
+</html>
